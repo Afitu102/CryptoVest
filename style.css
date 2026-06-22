@@ -285,9 +285,7 @@ padding: 30px;
 margin-bottom: 50px;
 border-radius: 50%;
 position: relative;
-}
-.P {
-    .you {
+.you {
     background-color: transparent;
     mix-blend-mode: screen; 
     }
