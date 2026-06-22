@@ -285,11 +285,14 @@ padding: 30px;
 margin-bottom: 50px;
 border-radius: 50%;
 position: relative;
-.you {
-    background-color: transparent;
-    mix-blend-mode: screen;
-
 }
+.P {
+    .you {
+    background-color: transparent;
+    mix-blend-mode: screen; 
+    }
+}
+
 
 .P {
     h2 {
