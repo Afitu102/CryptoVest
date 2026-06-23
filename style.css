@@ -383,9 +383,11 @@ p {
   margin-bottom: 30px;
 }
 
-.love {
+.U {
+    .love {
     background-color: transparent;
     mix-blend-mode: screen;
+}
 }
 
 
