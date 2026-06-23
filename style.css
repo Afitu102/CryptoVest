@@ -384,6 +384,12 @@ p {
 }
 
 .love {
+    background-color: transparent;
+    mix-blend-mode: screen;
+}
+
+
+.love {
     animation: float 3s ease-in-out infinite;
 }
 
