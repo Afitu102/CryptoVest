@@ -338,10 +338,14 @@ p {
   padding: 20px;
   display: flex;
   justify-content: center;
-  background: transparent;
-  mix-blend-mode: screen;
  margin-bottom: 30px;
 }
+
+.J {
+    background-color: transparent;
+    mix-blend-mode: screen;
+}
+
 
 .Q {
   color: lightgray;
