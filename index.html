@@ -112,10 +112,46 @@ expertize are always here to support you. </p>
 </ol>
 </div>
 
-div class="J">
-    <img src="https://files.catbox.moe/h7ztrj.png" alt="CryptoVest" height="450">
+<div class="wallet-slider">
+    <img id="walletImage" src="https://files.catbox.moe/z0l3z1.jpg" alt="Crypto Wallet">
 </div>
 
+<script>
+const walletImages = [
+"https://files.catbox.moe/z0l3z1.jpg",
+"https://files.catbox.moe/3i6pw0.jpg",
+"https://files.catbox.moe/ya12pm.jpg",
+"https://files.catbox.moe/jmp6fd.jpg",
+"https://files.catbox.moe/godu6b.jpg",
+"https://files.catbox.moe/w6t0zl.jpg",
+"https://files.catbox.moe/716t6c.jpg",
+"https://files.catbox.moe/l6s5gh.jpg"
+];
+
+let current = 0;
+const img = document.getElementById("walletImage");
+
+setInterval(function(){
+
+    img.style.opacity = "0";
+
+    setTimeout(function(){
+
+        current++;
+
+        if(current >= walletImages.length){
+            current = 0;
+        }
+
+        img.src = walletImages[current];
+        img.style.opacity = "1";
+
+    },500);
+
+},3000);
+</script>
+
+    
 <div class="K">
     <h2> Satisfield Customers</h2>
     <p> Customers, those who already tried our <br> Services</p>
