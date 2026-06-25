@@ -921,6 +921,22 @@ h3 {
      color: lightgray;
      margin-top: 20px;
      margin-bottom: 20px; 
-    
     }   
 
+.video-container{
+    width:70%;
+    margin:30px auto;
+}
+
+.video-container video{
+    width:100%;
+    display:block;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+    transform:scale(1);
+    transition:0.3s ease;
+}
+
+.video-container video:hover{
+    transform:scale(1.02);
+}
