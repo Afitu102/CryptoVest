@@ -942,3 +942,21 @@ h3 {
 .video-container video:hover{
     transform:scale(1.02);
 }
+
+.wallet-slider{
+    width:70%;
+    max-width:900px;
+    margin:40px auto;
+}
+
+.wallet-slider img{
+    width:100%;
+    display:block;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    transition:opacity .8s ease;
+    opacity:1;
+}
+
+
+
