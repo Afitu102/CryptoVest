@@ -944,19 +944,73 @@ h3 {
 }
 
 .wallet-slider{
-    width:70%;
-    max-width:900px;
-    margin:40px auto;
-}
 
-.wallet-slider img{
     width:100%;
-    display:block;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
-    transition:opacity .8s ease;
-    opacity:1;
+    height:320px;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+    background:transparent;
+
+    margin:40px 0;
+
 }
 
+.wallet{
 
+    position:absolute;
 
+    width:65%;
+
+    max-width:650px;
+
+    opacity:0;
+
+    transform:translateX(100%);
+
+    transition:all 1s ease;
+
+    filter:
+    drop-shadow(0 0 12px rgba(0,255,255,.25));
+
+}
+
+.wallet.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+    z-index:2;
+
+}
+
+.wallet.exit{
+
+    opacity:0;
+
+    transform:translateX(-100%);
+
+}
+
+@media(max-width:768px){
+
+.wallet{
+
+    width:90%;
+
+}
+
+.wallet-slider{
+
+    height:230px;
+
+}
+
+}
