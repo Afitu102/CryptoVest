@@ -113,44 +113,67 @@ expertize are always here to support you. </p>
 </div>
 
 <div class="wallet-slider">
-    <img id="walletImage" src="https://files.catbox.moe/z0l3z1.jpg" alt="Crypto Wallet">
+
+    <img id="wallet1" class="wallet active"
+    src="https://files.catbox.moe/684j0r.png">
+
+    <img id="wallet2" class="wallet"
+    src="https://files.catbox.moe/idgj33.png">
+
+    <img id="wallet3" class="wallet"
+    src="https://files.catbox.moe/geu91x.png">
+
+    <img id="wallet4" class="wallet"
+    src="https://files.catbox.moe/lt32ic.png">
+
+    <img id="wallet5" class="wallet"
+    src="https://files.catbox.moe/n8o42q.png">
+
+    <img id="wallet6" class="wallet"
+    src="https://files.catbox.moe/2skgdi.png">
+
+    <img id="wallet7" class="wallet"
+    src="https://files.catbox.moe/75f579.png">
+
+    <img id="wallet8" class="wallet"
+    src="https://files.catbox.moe/6l73ng.png">
+
 </div>
 
 <script>
-const walletImages = [
-"https://files.catbox.moe/z0l3z1.jpg",
-"https://files.catbox.moe/3i6pw0.jpg",
-"https://files.catbox.moe/ya12pm.jpg",
-"https://files.catbox.moe/jmp6fd.jpg",
-"https://files.catbox.moe/godu6b.jpg",
-"https://files.catbox.moe/w6t0zl.jpg",
-"https://files.catbox.moe/716t6c.jpg",
-"https://files.catbox.moe/l6s5gh.jpg"
-];
+
+const wallets = document.querySelectorAll(".wallet");
 
 let current = 0;
-const img = document.getElementById("walletImage");
 
-setInterval(function(){
+setInterval(() => {
 
-    img.style.opacity = "0";
+    const currentWallet = wallets[current];
 
-    setTimeout(function(){
+    let next = current + 1;
 
-        current++;
+    if(next >= wallets.length){
+        next = 0;
+    }
 
-        if(current >= walletImages.length){
-            current = 0;
-        }
+    const nextWallet = wallets[next];
 
-        img.src = walletImages[current];
-        img.style.opacity = "1";
+    currentWallet.classList.remove("active");
+    currentWallet.classList.add("exit");
 
-    },500);
+    nextWallet.classList.add("active");
 
-},3000);
+    setTimeout(() => {
+
+        currentWallet.classList.remove("exit");
+
+    },1000);
+
+    current = next;
+
+},5000);
+
 </script>
-
     
 <div class="K">
     <h2> Satisfield Customers</h2>
